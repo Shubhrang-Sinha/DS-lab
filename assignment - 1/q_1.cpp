@@ -10,12 +10,12 @@ void createArray(int arr[], int &n) {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    cout << endl << "Array created!";
+    cout << endl << "Array created";
 }
 
 void displayArray(int arr[], int n) {
     if (n == 0) {
-        cout << "Array is empty!" << endl;
+        cout << "Array empty" << endl;
         return;
     }
     cout << "Array elements: ";
@@ -27,14 +27,14 @@ void displayArray(int arr[], int n) {
 
 void insertElement(int arr[], int &n) {
     if (n >= MAX) {
-        cout << "Array is full, cannot insert!" << endl;
+        cout << "Array is full" << endl;
         return;
     }
     int pos, val;
     cout << "Enter position (1 to " << n + 1 << "): ";
     cin >> pos;
     if (pos < 1 || pos > n + 1) {
-        cout << "Invalid position!" << endl;
+        cout << "Invalid position" << endl;
         return;
     }
     cout << "Enter value: ";
@@ -50,14 +50,14 @@ void insertElement(int arr[], int &n) {
 
 void deleteElement(int arr[], int &n) {
     if (n == 0) {
-        cout << "Array is empty, cannot delete!" << endl;
+        cout << "Array is empty" << endl;
         return;
     }
     int pos;
     cout << "Enter position (1 to " << n << "): ";
     cin >> pos;
     if (pos < 1 || pos > n) {
-        cout << "Invalid position!" << endl;
+        cout << "Invalid position" << endl;
         return;
     }
     for (int i = pos - 1; i < n - 1; i++) {
@@ -69,7 +69,7 @@ void deleteElement(int arr[], int &n) {
 
 void linearSearch(int arr[], int n) {
     if (n == 0) {
-        cout << "Array is empty!" << endl;
+        cout << "Array empty" << endl;
         return;
     }
     int key;
@@ -81,7 +81,7 @@ void linearSearch(int arr[], int n) {
             return;
         }
     }
-    cout << "Element not found!" << endl;
+    cout << "Element not found" << endl;
 }
 
 int main() {
