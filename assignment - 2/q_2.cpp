@@ -17,7 +17,7 @@ void bubble_sort(int arr[], int n) {
     }
 }
 
-void printArray(int arr[], int n) {
+void print_array(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
@@ -29,12 +29,12 @@ int main() {
     int n = sizeof(arr) / sizeof(arr[0]);
 
     cout << "Original array: ";
-    printArray(arr, n);
+    print_array(arr, n);
 
     bubble_sort(arr, n);
 
     cout << "Sorted array: ";
-    printArray(arr, n);
+    print_array(arr, n);
 
     return 0;
 }
