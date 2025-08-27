@@ -13,8 +13,11 @@ void Smaller(int arr[], int n) {
         }
 
         if (st.empty()) {
+            
             cout << -1 << " ";
-        } else {
+        }
+        else {
+
             cout << st.top() << " ";
         }
 
