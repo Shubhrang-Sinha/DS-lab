@@ -4,6 +4,8 @@ using namespace std;
 
 void Smaller(int arr[], int n) {
     stack<int> st;
+    int small[n];
+
 
     for (int i = 0; i < n; i++) {
 
@@ -13,17 +15,23 @@ void Smaller(int arr[], int n) {
         }
 
         if (st.empty()) {
+           small[i] = -1;
             
-            cout << -1 << " ";
         }
         else {
+            small[i] = st.top();
 
-            cout << st.top() << " ";
         }
 
         st.push(arr[i]);
     }
     cout << endl;
+
+     cout << "Next Smallest Elements:\n";
+    for(int i = 0; i < n; i++) {
+
+        cout << " " << small[i];
+    }
 }
 
 int main() {
@@ -40,6 +48,8 @@ int main() {
 
     cout << "Nearest smaller elements: ";
     Smaller(arr, n);
+
+    
 
     return 0;
 }
