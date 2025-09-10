@@ -4,22 +4,23 @@ using namespace std;
 
 void interleave(queue<int>& q) {
     int n = q.size();
+    
     if (n % 2 != 0) {
         cout << "Queue size must be even!\n";
         return;
     }
 
     int half = n / 2;
-    queue<int> firstHalf;
+    queue<int> firsthalf;
 
     for (int i = 0; i < half; i++) {
-        firstHalf.push(q.front());
+        firsthalf.push(q.front());
         q.pop();
     }
 
-    while (!firstHalf.empty()) {
-        q.push(firstHalf.front());
-        firstHalf.pop();
+    while (!firsthalf.empty()) {
+        q.push(firsthalf.front());
+        firsthalf.pop();
 
         q.push(q.front());
         q.pop();
@@ -38,7 +39,7 @@ int main() {
     queue<int> q;
     int n, val;
 
-    cout << "Enter number of elements (even size): ";
+    cout << "Enter number of elements (even): ";
     cin >> n;
 
     cout << "Enter elements: ";

@@ -2,7 +2,7 @@
 using namespace std;
 
 bool isEmpty(int front, int rear) {
-    return (front == -1);
+    return (front == -1 && front == rear);
 }
 
 bool isFull(int front, int rear, int size) {

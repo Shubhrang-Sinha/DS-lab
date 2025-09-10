@@ -41,7 +41,7 @@ int main() {
     push(30);
 
     cout << "Top: " << top() << endl; 
-    pop();
+    
     cout << "Top: " << top() << endl; 
     pop();
     cout << "Top: " << top() << endl; 
