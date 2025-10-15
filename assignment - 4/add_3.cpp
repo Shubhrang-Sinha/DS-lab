@@ -14,7 +14,8 @@ bool checkQueueSorted(queue<int> &q) {
 
         if (front == expected) {
             expected++;
-        } else {
+        } 
+        else {
             if (!s.empty() && s.top() < front) {
                 return false;  
             }

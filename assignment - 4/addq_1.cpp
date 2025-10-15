@@ -10,7 +10,9 @@ void printBinary(int n) {
             num /= 2;
         }
         cout << binary;
-        if (i != n) cout << ", ";
+        if (i != n) {
+            cout << ", ";
+        }
     }
 }
 

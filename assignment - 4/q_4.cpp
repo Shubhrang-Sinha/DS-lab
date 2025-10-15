@@ -5,9 +5,9 @@ using namespace std;
 
 int main() {
     string s;
-    cout << "Enter string: ";
+    cout << "Enter string:";
     getline(cin, s);
-
+    
     queue<char> q;                
     unordered_map<char, int> freq; 
 

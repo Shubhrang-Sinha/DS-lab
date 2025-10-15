@@ -5,7 +5,9 @@ using namespace std;
 
 int countStudents(vector<int>& students, vector<int>& sandwiches) {
     queue<int> q;
-    for (int s : students) q.push(s);
+    for (int s : students) {
+        q.push(s);
+    }
 
     int i = 0; 
     int count = 0; 
@@ -14,7 +16,8 @@ int countStudents(vector<int>& students, vector<int>& sandwiches) {
             q.pop();
             i++;
             count = 0; 
-        } else {
+        } 
+        else {
             q.push(q.front());
             q.pop();
             count++; 
