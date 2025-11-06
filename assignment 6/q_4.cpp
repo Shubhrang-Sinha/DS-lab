@@ -16,7 +16,9 @@ Node* createNode(char value) {
 }
 
 bool isPalindrome(Node* head) {
-    if (head == nullptr) return true;
+    if (head == nullptr) {
+        return true;
+    }
 
     Node* tail = head;
     while (tail->next != nullptr) {
